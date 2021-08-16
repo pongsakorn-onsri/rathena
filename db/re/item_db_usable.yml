@@ -44993,13 +44993,13 @@ Body:
   - Id: 22571
     AegisName: Easter_Egg
     Name: Easter Egg
-    Type: Delayconsume
+    Type: Usable
     Buy: 10
     Weight: 10
     Flags:
       Container: true
     Script: |
-      getgroupitem(IG_EASTER_EGG);
+      getrandgroupitem(IG_EASTER_EGG,1);
   - Id: 22592
     AegisName: Happy_Call_Box
     Name: Happy Call Box
@@ -45102,8 +45102,8 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      sc_start SC_EXPBOOST,8640000,50;
-      sc_start SC_ITEMBOOST,8640000,200;
+      sc_start SC_EXPBOOST,1800000,50;
+      sc_start SC_ITEMBOOST,1800000,100;
   - Id: 22617
     AegisName: Clear_Box_S
     Name: Clear Box S

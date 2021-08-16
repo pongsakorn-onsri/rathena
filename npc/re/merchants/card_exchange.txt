@@ -52,7 +52,6 @@ comodo,148,306,4	script	Card Vendor Machine#pa08	562,{
 	case 3:
 		specialeffect2 EF_COIN;
 		specialeffect2 EF_LOUD;
-		progressbar "0xffff00",3;
 		callsub L_Exchange,	// yes, this list is hardcoded in the official script...
 			4001, 4002, 4003, 4004, 4005, 4006, 4008, 4009, 4010, 4011,
 			4012, 4013, 4014, 4015, 4016, 4017, 4018, 4019, 4020, 4021,
@@ -92,7 +91,6 @@ comodo,148,306,4	script	Card Vendor Machine#pa08	562,{
 	case 4:
 		specialeffect2 EF_COIN;
 		specialeffect2 EF_LOUD;
-		progressbar "0xffff00",3;
 		if (countitem(6379) < 5) {
 			mes "[Terminator RX1]";
 			mes "You do not have enough coins.";

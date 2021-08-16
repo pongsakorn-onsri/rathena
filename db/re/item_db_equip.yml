@@ -79143,6 +79143,23 @@ Body:
     Script: |
       bonus bMaxSP,140;
       bonus2 bSPRegenRate,6,4000;
+  - Id: 19167
+    AegisName: C_JP_EV01
+    Name: Horns of Demon Baphomet
+    Type: Armor
+    Buy: 20
+    Weight: 80
+    Defense: 10
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 14
+    Refineable: true
+    View: 1532
+    Script: |
+      bonus bBaseAtk,50;
+      bonus bMatk,50;
+      bonus bDelayrate,-10;
   - Id: 19168
     AegisName: Band_Of_Kafra_
     Name: Kafra Staff Headband
