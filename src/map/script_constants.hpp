@@ -1124,6 +1124,8 @@
 	export_constant(SC_BOSSMAPINFO);
 	export_constant(SC_LIFEINSURANCE);
 	export_constant(SC_INCCRI);
+	export_constant(SC_VIP_EXP);
+	export_constant(SC_VIP_DROPS);
 	//export_constant(SC_INCDEF);
 	//export_constant(SC_INCBASEATK);
 	//export_constant(SC_FASTCAST);
@@ -2737,6 +2739,8 @@
 	export_constant(EFST_CASH_DEATHPENALTY);
 	export_constant(EFST_CASH_RECEIVEITEM);
 	export_constant(EFST_CASH_BOSS_ALARM);
+	export_constant(EFST_VIP_PLUSEXP);
+	export_constant(EFST_VIP_RECEIVEITEM);
 	export_constant(EFST_DA_ENERGY);
 	export_constant(EFST_DA_FIRSTSLOT);
 	export_constant(EFST_DA_HEADDEF);

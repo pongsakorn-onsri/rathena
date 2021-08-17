@@ -1510,6 +1510,10 @@ void initChangeTables(void)
 	StatusIconChangeTable[SC_COMMONSC_RESIST] = EFST_TARGET_BLOOD;
 	StatusIconChangeTable[SC_ATTHASTE_CASH] = EFST_ATTHASTE_CASH;
 
+		/* VIP Status System */
+	StatusIconChangeTable[SC_VIP_EXP] = EFST_VIP_PLUSEXP;
+	StatusIconChangeTable[SC_VIP_DROPS] = EFST_VIP_RECEIVEITEM;
+
 	/* Mercenary Bonus Effects */
 	StatusIconChangeTable[SC_MERC_FLEEUP] = EFST_MER_FLEE;
 	StatusIconChangeTable[SC_MERC_ATKUP] = EFST_MER_ATK;
@@ -13214,6 +13218,8 @@ int status_change_clear(struct block_list* bl, int type)
 			case SC_JAILED:
 			case SC_EXPBOOST:
 			case SC_ITEMBOOST:
+			case SC_VIP_EXP:
+			case SC_VIP_DROPS:
 			case SC_HELLPOWER:
 			case SC_JEXPBOOST:
 			case SC_AUTOTRADE:
@@ -15372,6 +15378,8 @@ void status_change_clear_buffs(struct block_list* bl, uint8 type)
 			case SC_EXPBOOST:
 			case SC_JEXPBOOST:
 			case SC_ITEMBOOST:
+			case SC_VIP_EXP:
+			case SC_VIP_DROPS:
 			case SC__MANHOLE:
 			case SC_GIANTGROWTH:
 			case SC_MILLENNIUMSHIELD:

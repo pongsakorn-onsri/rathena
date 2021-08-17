@@ -1937,6 +1937,7 @@ int skill_additional_effect(struct block_list* src, struct block_list *bl, uint1
 					case SC_SMA:			case SC_SPEEDUP0:		case SC_NOCHAT:
 					case SC_ANKLE:			case SC_SPIDERWEB:		case SC_JAILED:
 					case SC_ITEMBOOST:		case SC_EXPBOOST:		case SC_LIFEINSURANCE:
+					case SC_VIP_EXP:		case SC_VIP_DROPS:
 					case SC_BOSSMAPINFO:	case SC_PNEUMA:			case SC_AUTOSPELL:
 					case SC_INCHITRATE:		case SC_INCATKRATE:		case SC_NEN:
 					case SC_READYSTORM:		case SC_READYDOWN:		case SC_READYTURN:
@@ -8403,6 +8404,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 					case SC_SMA:			case SC_SPEEDUP0:		case SC_NOCHAT:
 					case SC_ANKLE:			case SC_SPIDERWEB:		case SC_JAILED:
 					case SC_ITEMBOOST:		case SC_EXPBOOST:		case SC_LIFEINSURANCE:
+					case SC_VIP_EXP:		case SC_VIP_DROPS:
 					case SC_BOSSMAPINFO:	case SC_PNEUMA:			case SC_AUTOSPELL:
 					case SC_INCHITRATE:		case SC_INCATKRATE:		case SC_NEN:
 					case SC_READYSTORM:		case SC_READYDOWN:		case SC_READYTURN:
@@ -9948,6 +9950,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 					case SC_SMA:			case SC_SPEEDUP0:		case SC_NOCHAT:
 					case SC_ANKLE:			case SC_SPIDERWEB:		case SC_JAILED:
 					case SC_ITEMBOOST:		case SC_EXPBOOST:		case SC_LIFEINSURANCE:
+					case SC_VIP_EXP:		case SC_VIP_DROPS:
 					case SC_BOSSMAPINFO:		case SC_PNEUMA:			case SC_AUTOSPELL:
 					case SC_INCHITRATE:		case SC_INCATKRATE:		case SC_NEN:
 					case SC_READYSTORM:		case SC_READYDOWN:		case SC_READYTURN:
