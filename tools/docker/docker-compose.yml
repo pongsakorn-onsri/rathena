@@ -34,6 +34,10 @@ services:
             dockerfile: Dockerfile
         depends_on:
             - db
-
+    admin:
+        image: "phpmyadmin:latest"
+        container_name: "backoffice"
+        ports:
+            - "8080:80" 
 volumes:
     rathenadb:
