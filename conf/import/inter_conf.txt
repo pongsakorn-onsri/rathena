@@ -1,5 +1,31 @@
+// MySQL Login server
+login_server_ip: 10.130.0.4
+login_server_port: 3306
+login_server_id: rathena
+login_server_pw: Welcome@123
 login_server_db: rathena
+
+ipban_db_ip: 10.130.0.4
+ipban_db_port: 3306
+ipban_db_id: rathena
+ipban_db_pw: Welcome@123
 ipban_db_db: rathena
+
+// MySQL Character server
+char_server_ip: 10.130.0.4
+char_server_port: 3306
+char_server_id: rathena
+char_server_pw: Welcome@123
 char_server_db: rathena
+
+map_server_ip: 10.130.0.4
+map_server_port: 3306
+map_server_id: rathena
+map_server_pw: Welcome@123
 map_server_db: rathena
+
+log_db_ip: 10.130.0.4
+log_db_port: 3306
+log_db_id: rathena
+log_db_pw: Welcome@123
 log_db_db: rathena_logs
