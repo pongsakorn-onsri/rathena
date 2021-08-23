@@ -86,6 +86,44 @@ Header:
   Type: ITEM_DB
   Version: 1
 
+## JRO
+Body:
+  - Id: 490118
+    AegisName: RingOfAdoramus
+    Name: Adoration Ring
+    Type: Armor
+    Buy: 20
+    Weight: 10
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 100
+    Script: |
+      bonus bMdef,15;
+      bonus bInt,7;
+      bonus2 bMagicAddSize,Size_Small,10;
+      bonus2 bMagicAddSize,Size_Medium,10;
+      bonus2 bMagicAddSize,Size_Large,10;
+      bonus2 bSkillAtk,"AB_ADORAMUS",1*(Baselevel/3);
+      bonus2 bSkillAtk,"AB_JUDEX",1*(Baselevel/3);
+      if (getskilllv("AB_CLEARANCE") >= 5) {
+         bonus2 bMagicAddEle,Ele_Wind,10;
+         bonus2 bMagicAddEle,Ele_Holy,10;
+         bonus2 bMagicAddEle,Ele_Neutral,10;
+      }
+      if (getskilllv("AB_ORATIO") >= 10) {
+         bonus2 bFixedCastrate,"AB_ORATIO",100;
+         bonus bHealPower,30;
+         bonus bUseSPrate,-10;
+      }
+      if (getskilllv("AB_ADORAMUS") >= 10) {
+         bonus bAspdRate,15;
+         bonus bMagicHPGainValue,100;
+         bonus bMagicSPGainValue,10;
+      }
+      if (getskilllv("AB_OFFERTORIUM") >= 5) {
+         bonus bCastrate,30;
+      }
 #Body:
 # THQ Quest Items
 #=============================================================

@@ -3,3 +3,4 @@
 // Structure of Database:
 // ID:ID:ID:ID,{ Script }
 
+490118:29371,{ if (BaseJob == Job_Priest) { bonus bIgnoreMDefRace,RC_All; } }
